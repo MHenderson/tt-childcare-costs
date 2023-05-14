@@ -9,7 +9,7 @@ library(targets)
 
 # Set target options:
 tar_option_set(
-  packages = c("readr", "tibble"), # packages that your targets need to run
+  packages = c("dplyr", "readr", "tibble"), # packages that your targets need to run
   format = "rds" # default storage format
   # Set other options as needed.
 )
@@ -33,5 +33,9 @@ list(
   tar_target(
     name = childcare_costs,
     command = read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/childcare_costs.csv')
+  ),
+  tar_target(
+    name = childcare_costs_w_county,
+    command = left_join(childcare_costs, counties)
   )
 )
