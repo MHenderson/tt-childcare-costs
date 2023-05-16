@@ -1,4 +1,11 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
 childcare_costs|stem|a36a17bc67cc768d|c6a598ac67c85d5b|7199b9143a2e7ccc|1845111895||t19489.6609138073s|04fc4e7b7ced560f|3897568|rds|local|vector|||6.935||
 childcare_costs_w_county|stem|88fc4e44c226456b|6670bc1b482131db|7bb3c2f0ceecf3d0|1856784998||t19491.67035278s|33250ddaff46c854|3929576|rds|local|vector|||0.229||
+childcare_counties_sum|stem|2054229890d5f82c|f20431176f0aa909|8e9b80c1229624ef|311951511||t19493.6002919625s|6f94c3ed34053c27|14629|rds|local|vector|||0.137||
 counties|stem|49c17aac0d03cc45|2b196fd2c3a8b4be|7199b9143a2e7ccc|-710560319||t19489.660801807s|8a7609cf9ce4706a|25319|rds|local|vector|||2.515||
+county_boundaries|stem|b70d777fb215752d|7f5079307090023c|78adfcbe656dc921|-1210131603||t19493.5991642361s|2bd95cdd7a6d2ab9|2780334|rds|local|vector|||1.522||
+county_boundaries_w_costs|stem|19fdc3701e557181|e687bee22dff8e18|3db4101a1b4b8374|-890288620||t19493.601041203s|1a83ae06ae96fec3|2789462|rds|local|vector|||0.125||
+map_plot|function|9bec99ffc87670ca|||||||||||||||
+plot_output|stem|bb27b80f70753927|9777e40197fabef8|89373da6ddd8009b|918190908||t19493.6099803358s|247bce978136bc51|5477683|rds|local|vector|||0.141||
+save_plot|stem|2cdc39d38a2225dd|9ce2aebd11bf893b|7a835d477e3e2b1c|-938188392|plot/infant-center-based.png|t19493.6100143667s|9804d33a5fa0bce3|1477798|file|local|vector|||2.915||
+states_to_plot|stem|c67790c527b6837a|39f2674f514ac814|b0ac0657a11e561c|1871144634||t19493.6013702849s|2059933ece86081f|158|rds|local|vector|||1.486||
