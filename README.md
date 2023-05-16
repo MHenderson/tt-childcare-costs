@@ -1,2 +1,6 @@
 # childcare-costs
-Tidy Tuesday for week 19, 2023.
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+![](plot/infant-center-based.png)
