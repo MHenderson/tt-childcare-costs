@@ -9,6 +9,6 @@ childcare_costs_w_county|stem|d48a2ef8a3224164|2a6dcc244ca54941|d2ea6595464ef5dd
 childcare_counties_sum|stem|4aed5a860de15ce1|996dd21d75c60eee|5e739f4c232637e3|-902218488||t20140.3430882837s|s14629b|14629|rds|local|vector|||0.33||
 county_boundaries_w_costs|stem|1c0624069e5b8bb7|733a313ce5aa735a|c37ac5d964dbf9b3|-711131964||t20140.343092543s|s2999785b|2999785|rds|local|vector|||0.054||
 map_plot|function|208389d8ac910cc1|||||||||||||||
-.Random.seed|object|5570ff03b0cde06b
 plot_output|stem|34fbc94ab33967a4|84137be031a2d458|06f78bb840ab4a01|217908767||t20140.3489727747s|s14219555b|14219555|rds|local|vector|||0.208|A numeric legend.position argument in theme was deprecated in ggplot23.5.0.ℹ Please use the legend.position.inside argument of theme instead.|
 save_plot|stem|4aa1579ca35d6c33|e4ab10b4dc5a262e|f465119d74af198c|-1898771178|plot/infant-center-based.png|t20140.3489976828s|s1165249b|1165249|file|local|vector|||2.097||
+.Random.seed|object|a5ae851ed4285802

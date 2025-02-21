@@ -5,8 +5,6 @@ tar_option_set(
     format = "rds"
 )
 
-tar_source()
-
 list(
   tar_target(
        name = counties_df,
