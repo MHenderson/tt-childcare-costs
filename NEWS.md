@@ -8,4 +8,5 @@
 * Data from National Database of Childcare Prices, U.S. Department of Labor.
 * Using ggplot2, ggthemes, sf, tigris for data visualisation.
 * Using dplyr, readr, tibble for data transformation.
+* Based on R 4.4.2 and renv 1.1.1.
 
