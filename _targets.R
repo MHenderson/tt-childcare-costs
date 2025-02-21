@@ -1,7 +1,7 @@
 library(targets)
 
 tar_option_set(
-  packages = c("dplyr", "ggplot2", "ggthemes", "readr", "sf", "tibble"), 
+  packages = c("dplyr", "ggplot2", "ggthemes", "readr", "sf", "tibble", "tigris"), 
     format = "rds"
 )
 
@@ -9,7 +9,7 @@ tar_source()
 
 list(
   tar_target(
-       name = counties,
+       name = counties_df,
     command = read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/counties.csv')
   ),
   tar_target(
@@ -17,13 +17,17 @@ list(
     command = read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/childcare_costs.csv')
   ),
   tar_target(
+       name = us_county_5m,
+    command = counties(cb = TRUE, resolution = "5m")
+  ),
+  tar_target(
        name = county_boundaries,
-    command = st_read("data-raw/cb_2018_us_county_5m") |>
+    command = us_county_5m |>
       mutate(county_fips_code = as.numeric(paste0(STATEFP, COUNTYFP)))
   ),
   tar_target(
        name = childcare_costs_w_county,
-    command = left_join(childcare_costs, counties)
+    command = left_join(childcare_costs, counties_df)
   ),
   tar_target(
        name = childcare_counties_sum,

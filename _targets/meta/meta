@@ -1,11 +1,14 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-childcare_costs|stem|a36a17bc67cc768d|c6a598ac67c85d5b|7199b9143a2e7ccc|1845111895||t19489.6609138073s|04fc4e7b7ced560f|3897568|rds|local|vector|||6.935||
-childcare_costs_w_county|stem|88fc4e44c226456b|6670bc1b482131db|7bb3c2f0ceecf3d0|1856784998||t19491.67035278s|33250ddaff46c854|3929576|rds|local|vector|||0.229||
-childcare_counties_sum|stem|2054229890d5f82c|f20431176f0aa909|8e9b80c1229624ef|311951511||t19493.6002919625s|6f94c3ed34053c27|14629|rds|local|vector|||0.137||
-counties|stem|49c17aac0d03cc45|2b196fd2c3a8b4be|7199b9143a2e7ccc|-710560319||t19489.660801807s|8a7609cf9ce4706a|25319|rds|local|vector|||2.515||
-county_boundaries|stem|b70d777fb215752d|7f5079307090023c|78adfcbe656dc921|-1210131603||t19493.5991642361s|2bd95cdd7a6d2ab9|2780334|rds|local|vector|||1.522||
-county_boundaries_w_costs|stem|19fdc3701e557181|e687bee22dff8e18|3db4101a1b4b8374|-890288620||t19493.601041203s|1a83ae06ae96fec3|2789462|rds|local|vector|||0.125||
-map_plot|function|9bec99ffc87670ca|||||||||||||||
-plot_output|stem|bb27b80f70753927|9777e40197fabef8|89373da6ddd8009b|918190908||t19493.6099803358s|247bce978136bc51|5477683|rds|local|vector|||0.141||
-save_plot|stem|2cdc39d38a2225dd|9ce2aebd11bf893b|7a835d477e3e2b1c|-938188392|plot/infant-center-based.png|t19493.6100143667s|9804d33a5fa0bce3|1477798|file|local|vector|||2.915||
-states_to_plot|stem|c67790c527b6837a|39f2674f514ac814|b0ac0657a11e561c|1871144634||t19493.6013702849s|2059933ece86081f|158|rds|local|vector|||1.486||
+counties|stem|349f12550585b725|4029c9f5e3475578|2c530c1562a7fbd1|-45057699||t20140.3335882967s|s25318b|25318|rds|local|vector|||2.541||
+us_county_5m|stem|9a4036835f15017d|5dd191b2de5b8046|2c530c1562a7fbd1|502296016||t20140.3429749477s|s2979674b|2979674|rds|local|vector|||3.859||
+states_to_plot|stem|1b3d3ea4a357a20e|a1edd6f6abfb6f52|2c530c1562a7fbd1|-818231364||t20140.3429754107s|s158b|158|rds|local|vector|||0.001||
+childcare_costs|stem|3df4853e1446634e|f9ec1cb60c5c2a7b|2c530c1562a7fbd1|-374277896||t20140.3430547644s|s3897568b|3897568|rds|local|vector|||5.496||
+counties_df|stem|349f12550585b725|4029c9f5e3475578|2c530c1562a7fbd1|855522237||t20140.343062959s|s25318b|25318|rds|local|vector|||0.688||
+county_boundaries|stem|1535d48aec955962|d2a7b8bbb30439f5|ca67d530417fb199|46120329||t20140.343066848s|s2990515b|2990515|rds|local|vector|||0.016||
+childcare_costs_w_county|stem|d48a2ef8a3224164|2a6dcc244ca54941|d2ea6595464ef5dd|-1177032603||t20140.3430843021s|s3929576b|3929576|rds|local|vector|||0.081||
+childcare_counties_sum|stem|4aed5a860de15ce1|996dd21d75c60eee|5e739f4c232637e3|-902218488||t20140.3430882837s|s14629b|14629|rds|local|vector|||0.33||
+county_boundaries_w_costs|stem|1c0624069e5b8bb7|733a313ce5aa735a|c37ac5d964dbf9b3|-711131964||t20140.343092543s|s2999785b|2999785|rds|local|vector|||0.054||
+map_plot|function|208389d8ac910cc1
+.Random.seed|object|32e61c0e36c9ca4e
+plot_output|stem|3f03f3b4fc951021|1df72b99fab7cf9c|46a0e83e498dba95|217908767||t20140.3456146848s|s14214199b|14214199|rds|local|vector|||0.225|A numeric legend.position argument in theme was deprecated in ggplot23.5.0.ℹ Please use the legend.position.inside argument of theme instead.|
+save_plot|stem|4aa1579ca35d6c33|e4ab10b4dc5a262e|350e8a22f7689184|-1898771178|plot/infant-center-based.png|t20140.3456395002s|s1165249b|1165249|file|local|vector|||2.112||
