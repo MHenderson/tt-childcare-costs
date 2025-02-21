@@ -54,7 +54,33 @@ list(
   ),
   tar_target(
        name = plot_output,
-    command = map_plot(county_boundaries_w_costs, states_to_plot)
+    command = {
+      county_boundaries_w_costs |>
+	filter(STATEFP %in% states_to_plot) |>
+	ggplot() +
+	geom_sf(aes(fill = mean_mc_infant)) +
+	scale_fill_continuous_tableau(na.value = "#d9d5c9") +
+	guides(
+	  fill = guide_colourbar(
+		  barwidth = 8,
+		 barheight = 1,
+	    title.position = "top",
+		 direction = "horizontal"
+	  )
+	) +
+	theme_void() +
+	theme(
+	  legend.position = c(.82, .9),
+	      plot.margin = margin(0, 1, 0, 1, "cm"),
+	) +
+	labs(
+	      fill = "Median yearly price (2018 dollars)",
+	     title = "Childcare Prices by Age of Children and Care Setting",
+	  subtitle = "Infant center-based",
+	   caption = "Source: National Database of Childcare Prices 2016 - 2018,
+	     Women's Bureau, U.S. Department of Labor."
+	)
+    }
   ),
   tar_target(
        name = save_plot,
